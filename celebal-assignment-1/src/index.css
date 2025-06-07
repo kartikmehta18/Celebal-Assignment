@@ -1,0 +1,196 @@
+/* Basic Styling for the Body */
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive, sans-serif; /* Retro font for the game feel */
+  background-color: #f0f8ff; /* Light background for a soft tone */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Main Container */
+.main {
+  text-align: center;
+}
+
+/* Form and Details Container */
+.main form,
+.main .details {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  text-align: left;
+  color: #ff6f61; /* Bright color for text */
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 3px solid #ff6f61; /* Retro border around the form */
+}
+
+/* Title Styling */
+.title {
+  color: #007acc; /* Bright blue for title */
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #f4c542, -2px -2px 0 #f4c542; /* Retro text shadow */
+}
+
+/* Form Field Labels */
+.details h3 {
+  color: #ff6347; /* Tomato red for subtitles */
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Text in the Detail Section */
+.detailText {
+  font-size: 18px;
+  padding: 10px 0;
+  margin-left: 10px;
+  color: #555;
+}
+
+/* Input Field Styling */
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 2px solid #333;
+  padding: 16px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  font-family: 'Courier New', Courier, monospace; /* Monospace font for retro feel */
+  transition: border-color 0.3s ease;
+}
+
+/* Focus Styling for Input Fields */
+input:focus {
+  outline: none;
+  border-color: #ff6347;
+  background-color: #fff;
+}
+
+/* Button Styling */
+button {
+  padding: 18px;
+  margin-top: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 220px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ff6347;
+  color: white;
+  border: 3px solid #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #ff4500;
+  color: white;
+  offset-rotate: 50deg;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading (Error and Success Messages) */
+h3 {
+  margin: 5px;
+  padding: 15px 15px 0px 15px;
+  font-weight: 300;
+}
+
+/* Error Messages */
+.errorMsg {
+  padding: 5px;
+  margin: 0px;
+  font-size: 16px;
+  color: red;
+}
+
+/* Success Messages (After Form Submit) */
+.details {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Add styling for the new fields */
+
+/* Inputs for new fields */
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 2px solid #333;
+  padding: 16px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  font-family: 'Courier New', Courier, monospace;
+  transition: border-color 0.3s ease;
+}
+
+select {
+  width: 100%;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border: 2px solid #333;
+  padding: 16px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  font-family: 'Courier New', Courier, monospace;
+  transition: border-color 0.3s ease;
+}
+
+/* Styling for the password field container */
+.passwordField {
+  position: relative;
+  width: 100%;
+}
+
+.passwordField input {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  color: #333;
+  border-radius: 8px;
+  border: 2px solid #333;
+  padding-right: 40px; /* Make space for the icon */
+}
+
+.passwordField .eyeIcon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+}
+
+.passwordField .eyeIcon:hover {
+  color: #ff6347; /* Change color on hover */
+}
